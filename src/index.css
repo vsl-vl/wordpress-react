@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-edited::-webkit-scrollbar{
+    display: none;
+}
+
+.edited-wp-content img{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.edited-wp-content{
+    text-align: justify;
+}
+.edited-wp-content div{
+    width: 100%!important;
+}
+.edited-wp-content iframe{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
