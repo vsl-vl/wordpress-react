@@ -3,11 +3,11 @@ Baçlanğıc səviyyə React və Wordpress strukturu
 
 ## Qurulması
 
-> 1. Reponu clonlayın və ya endirin
-> 2. Hazır etdikdən sonra əsas qovluqa npm və ya yarn install edib modulları qurun
-> 3. src/Components qovluqundakı api.jsx faylında url yerində sonunda "/wp-json/" olmaq şərti ilə yoxlamaq istədiyiniz Wordpress saytının adını daxil edin.
+> ### 1. Reponu clonlayın və ya endirin
+> ### 2. Hazır etdikdən sonra əsas qovluqa npm və ya yarn install edib modulları qurun
+> ### 3. Src/Components qovluqundakı api.jsx faylında url yerində sonunda "/wp-json/" olmaq şərti ilə yoxlamaq istədiyiniz Wordpress saytının adını daxil edin.
 > ### Nümünə: const url = "https://saytadı.com/wp-json/"
-> 5. Artıq Hazırdır
+> ### 5. Artıq Hazırdır
 
 # Struktura Daxildir
 
