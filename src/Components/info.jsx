@@ -12,10 +12,10 @@ const Category = (props) => {
         .then((response) => {
             setCategories(response.data)
         })
-    }, [])
+    }, [props.categoryID])
 
     return(
-        <div className="font-md">Kateqoriya: {categories == false ? "Yüklənir..." : <Link to={`/category/${categories.id}`} className="border border-[rgba(0,0,0,0.4)] shadow-3xl py-2 px-4">{categories.name}</Link> }</div>
+        <span className="font-md">{categories == false ? "Yüklənir..." : <Link to={`/category/${categories.id}`} className="border border-[rgba(0,0,0,0.4)] shadow-3xl py-2 px-4">{categories.name}</Link> }</span>
     )
 }
 
@@ -32,7 +32,9 @@ const Tag = (props) => {
 
     return(
         <span>
-            #{tag.name}
+            <Link to={`/tag/${tag.id}`}>
+                #{tag.name}
+            </Link>
         </span>
     )
 }

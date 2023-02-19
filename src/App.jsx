@@ -6,6 +6,7 @@ import Navbar from "./Components/Nav";
 import Post from "./Components/Post";
 import List from "./Components/List";
 import Search from "./Components/Search";
+import TagsPage from "./Components/TagPage";
 
 export default function App () {
 
@@ -26,6 +27,7 @@ export default function App () {
             <Route path="/" element={<Homepage />} />
             <Route path="/category/:id" element={<List />} />
             <Route path="/post/:id" element={<Post />} />
+            <Route path="/tag/:id" element={<TagsPage />} />
           </Routes>
         </div>
     </div>

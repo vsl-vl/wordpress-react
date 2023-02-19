@@ -44,14 +44,24 @@ export default function Post () {
             {post == false ? "Yüklənir..." : (
                 <div className="flex flex-col gap-5 w-full md:w-[75%]">
                     <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} className="text-medHeader font-bold mt-4" />
-                    <Category categoryID = {post.categories} />
-                    <div>
-                        <span>Taglar:</span>
-                        {post.tags.map((tag) => 
-                            <span className="border border-[rgba(0,0,0,0.4)] shadow-3xl py-2 px-4 mx-1">
-                                <Tag tag={tag} />
-                            </span>
+                    {post.categories == null ? "" : 
+                    <div className="flex gap-2">
+                        <span className="">Kateqoriya:</span>
+                        {post.categories.map((category) => 
+                            <Category key={category} categoryID = {category} />
                         )}
+                    </div>}
+                    <div>
+                        {post.tags == null ? "" : 
+                        <div>
+                            <span>Tag:</span>
+                            {post.tags.map((tag) => 
+                                <span className="border border-[rgba(0,0,0,0.4)] shadow-3xl py-2 px-4 mx-1" key={tag}>
+                                    <Tag tag={tag} />
+                                </span>
+                            )}
+                        </div>
+                        }
                     </div>
                     { featuredImage == false ? "Yüklənir..." : featuredImage == true ? "" : <img src={ featuredImage.source_url } className="rounded-md h-[400px] object-cover" /> }
                     <p dangerouslySetInnerHTML={{ __html: post.content.rendered }} className="flex flex-col edited-wp-content" />
