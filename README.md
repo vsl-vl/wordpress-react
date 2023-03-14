@@ -1,7 +1,7 @@
 # Wordpres + React Şablonu(Strukturu)
-#Baçlanğıc səviyyə React və Wordpress strukturu
+## Baçlanğıc səviyyə React və Wordpress strukturu
 
-## Qurulması
+### Qurulması:
 
 > ### 1. Reponu clonlayın və ya endirin.
 > ### 2. Hazır etdikdən sonra əsas qovluqa npm və ya yarn install edib modulları qurun.
